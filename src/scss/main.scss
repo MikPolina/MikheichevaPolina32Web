@@ -25,9 +25,10 @@
 
 body {
     background-image: url('../images/фон.webp');
-    background-size: cover;
+    background-position: center;
+    // background-size: cover;
     background-repeat: no-repeat;
-    width: 1280px;
+    max-width: 1280px;
     margin-top: 30px;
     margin: 0 auto;
 }
@@ -71,38 +72,6 @@ span{
     color: #ffffff;
 }
 
-
-
-.glav{
-    margin: 0 auto;
-    background-color: #B78AAE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 432px;
-    gap: 50px;
-    margin-bottom: 30px;
-
-    &__img{
-    display: flex;
-    }
-    &__img__1{
-    margin-top: 80px;
-    margin-right: -90px;
-    }
-    &__img__2{
-    margin-top: -30px;
-    }
-  &__img__3{
-    margin-top: 120px;
-    margin-left: -90px;
-    }
-    &__onas{
-    margin: 0 auto;
-    width: 1090px;
-    }
-}
-
 .plusi{
     display: flex;
     justify-content: center;
@@ -140,6 +109,10 @@ span{
 
 .onas{
     width: 1220px;
+
+    &__text{
+        padding-left: 100px;
+    }
 
     &__p{
         padding-left: 100px;
@@ -206,26 +179,26 @@ span{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (max-width: 1279px) and (min-width: 768px) {
     body {
     background-image: url('../images/фон.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 30px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 p{
-    font-size: 14px;
+    font-size: 16px;
     color: #858585; 
 }
 a{
-  font-size: 18px;
+  font-size: 24px;
   color: #858585;
-  line-height: 20px;
+  line-height: 30px;
   text-decoration: none;
 }
 h{
-    font-size: 28px;
+    font-size: 24px;
     color: #858585;
     margin-left: 100px;
 }
@@ -235,94 +208,71 @@ h1{
     font-weight: bold;
 }
 .h1__2{
-    font-size: 28px;
+    font-size: 24px;
     color: #ffffff;
 }
 h2{
-    font-size: 32px;
+    font-size: 40px;
     color: #858585; 
     line-height: 30px;
 }
-h3{
-    font-size: 32px;
-    color: #858585;
-    text-align: center;
-    font-weight: lighter;
-}
 span{
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff;
-}
-
-
-
-.glav{
-    margin: 0 auto;
-    background-color: #B78AAE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 432px;
-    gap: 50px;
-    margin-bottom: 30px;
-
-    &__img{
-    display: flex;
-    }
-    &__img__1{
-    margin-top: 80px;
-    margin-right: -90px;
-    }
-    &__img__2{
-    margin-top: -30px;
-    }
-  &__img__3{
-    margin-top: 120px;
-    margin-left: -90px;
-    }
-    &__onas{
-    margin: 0 auto;
-    width: 1090px;
-    }
 }
 
 .plusi{
     display: flex;
     justify-content: center;
-    gap: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .otzivi{
     display: flex;
     justify-content: center;
-    gap: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .kategorii{
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 20px;
     flex-wrap: wrap;
-    row-gap: 35px;
+    row-gap: 20px;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .popular{
     display: flex;
     justify-content: center;
-    gap: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .onas{
     width: 1220px;
+    box-sizing: border-box;
+    max-width: 100%;
+
+     &__text{
+        padding-left: 100px;
+    }
 
     &__p{
         padding-left: 100px;
@@ -356,10 +306,19 @@ span{
 .kontakt{
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 60px;
     align-items: center;
     padding-bottom: 30px;
     padding-top: 30px;
+
+    &__karta{
+        width: 471px;
+        height: 304px;
+    }
+    &__logotip{
+        width: 158px;
+        height: 65px;
+    }
 
     &__img{
         border-radius: 20px;
@@ -370,6 +329,10 @@ span{
         gap: 10px;
         padding-bottom: 20px;
         padding-top: 10px;
+        &__in{
+            width: 32px;
+            height: 32px;
+        }
     }
 
     &__menu{
@@ -388,4 +351,254 @@ span{
         padding-bottom: 30px;
     }
 }
+}
+
+
+@media (max-width: 767px) {
+    body {
+    background-image: url('../images/фон.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+p{
+    font-size: 14px;
+    color: #858585; 
+}
+a{
+  font-size: 20px;
+  color: #858585;
+  line-height: 30px;
+  text-decoration: none;
+}
+h{
+    font-size: 20px;
+    color: #858585;
+    margin-left: 50px;
+}
+h1{
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.h1__2{
+    font-size: 20px;
+    color: #ffffff;
+}
+h2{
+    font-size: 40px;
+    color: #858585; 
+    line-height: 30px;
+}
+span{
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.plusi{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.otzivi{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.kategorii{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.popular{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    align-items: center;
+    gap: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.onas{
+    width: 540px;
+    box-sizing: border-box;
+    max-width: 100%;
+
+     &__text{
+        padding-left: 50px;
+    }
+
+    &__p{
+        padding-left: 40px;
+        font-size: 24px;
+    }
+    &__img{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: -60px;
+        padding-bottom: 20px;
+        
+        &__in{
+        width: 130px;
+        height: 120px;
+        }
+        
+        &__1{
+            margin-top: 120px;
+        }
+        &__2{
+            margin-bottom: 0px;
+            margin-left: -30px;
+        }
+        &__3{
+            margin-top: 120px;
+            margin-left: -30px;
+        }
+        &__4{
+            margin-bottom: 0px;
+            margin-left: -30px;
+        }
+    }
+}
+
+.kontakt{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    &__karta{
+        width: 471px;
+        height: 304px;
+    }
+    &__logotip{
+        width: 158px;
+        height: 65px;
+    }
+
+    &__img{
+        border-radius: 20px;
+    }
+
+    &__icons{
+        display: flex;
+        gap: 10px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        &__in{
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &__menu{
+        color: #858585;
+    }
+
+    &__span{
+        color: #858585;
+        line-height: 1.6;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        gap: 150px;
+        padding-bottom: 30px;
+    }
+}
+}
+
+
+// Стили для тёмной темы
+body.dark-theme {
+    background-color: #858585;
+    background-image: none;
+
+    
+    p, a, h, h2, h3, span, .kontakt__menu, .kontakt__span {
+        color: #ffffff;
+    }
+    
+    .onas__p, .onas__text {
+        color: #ffffff !important;
+    }
+    
+    .footer__menu__a {
+        color: #ffffff;
+    }
+    
+    .btnForm {
+        background-color: #ffffff;
+        border: #B78AAE;
+        p {
+            color: #858585;
+        }
+    }
+    
+    .otziv {
+        border: #B78AAE;
+    }
+    
+    // Стили для категорий
+    .kateg {  
+        &__title {
+            color: #ffffff;
+        }
+        
+        &__list__item {
+            color: #ffffff;
+        }
+    }
+    
+    // Стили для преимуществ
+    .plus {
+        border: #B78AAE;
+        &__p {
+            color: #858585;
+        }
+    }
+    
+    // Стили для поиска
+    .search {
+        &__input {
+            background-color: 858585;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            
+            &::placeholder {
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
 }

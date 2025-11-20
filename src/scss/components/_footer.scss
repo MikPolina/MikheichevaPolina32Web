@@ -17,3 +17,94 @@ footer{
 .footer__menu__a{
     color: #ffffff;
 }
+
+@media (max-width: 1279px) and (min-width: 768px) {
+    footer{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 250px;
+    background-color: #858585;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .footer__logo{
+    &__icons{
+    display: flex;
+    gap: 10px;
+    &__in{
+        width: 32px;
+        height: 32px;
+    }
+}
+.footer__menu__a{
+    color: #ffffff;
+}
+.logotip{
+    width: 88px;
+    height: 89px;
+}
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+}
+
+
+@media (max-width: 767px) {
+    footer{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #858585;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .footer__logo{
+    &__icons{
+    display: flex;
+    gap: 5px;
+    &__in{
+        width: 20px;
+        height: 20px;
+    }
+}
+.footer__menu__a{
+    color: #ffffff;
+}
+.logotip{
+    width: 44px;
+    height: 45px;
+}
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+}
+
+body.dark-theme {
+  footer{
+    border-top: 1px solid #ffffff;
+  }
+}

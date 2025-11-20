@@ -7,23 +7,58 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Document</title>
 </head>
-<script src="./assets/js/like.js" defer="defer"></script>
+<script src="./assets/js/like.js"></script>
+<script src="./assets/js/menu.js"></script>
+
 <body>
 
  <header>
-        <a href="index.html"><div class="logo"><img src="./assets/images/лого.webp"></div></a>
+    <div class="header">
+        <a href="index.html"><div class="logo"><img src="./assets/images/лого.webp" class="logo__logotip"></div></a>
+        <nav class="nav">
         <a href="index.html">ГЛАВНАЯ</a>
         <a href="index2.html">КАТАЛОГ</a>
         <a href="index3.html">О НАС</a>
         <a href="index4.html">КОНТАКТЫ</a>
         <a>ДОСТАВКА</a>
+        </nav>
+
         <div class="header__icons">
-            <div class="logo"><img src="./assets/images/корзина.webp"></div>
-            <div class="logo__like"><img src="./assets/images/избр.webp" class="logo__izbr">
-</div>
+            <div class="logo__like"><img src="./assets/images/корзина.webp" class="logo__izbr"></div>
+            <div class="logo__like"><img src="./assets/images/избр.webp" class="logo__izbr"></div>
         </div>
-        <div class="logo"><img src="./assets/images/профиль.webp"></div>
-    </header>
+        <div class="logo__like"><img src="./assets/images/профиль.webp" class="logo__izbr"></div>
+        <div class="logo__like"><img src="./assets/images/луна.webp" class="logo__izbr"></div>
+</div>
+
+
+        <div class="menu">
+            <a href="index.html"><div class="logo"><img src="./assets/images/лого.webp" class="logo__logotip"></div></a>
+        <div class="menu__luna">
+        <div><img src="./assets/images/меню.webp" alt="Меню" class="menu__icon"></div>
+        <div class="logo__like"><img src="./assets/images/луна.webp" class="logo__izbr"></div>
+            </div>
+    </div>
+
+
+    <div class="overlay">
+        <div class="overlay__content">
+            <span class="overlay__close">&times;</span>
+            <nav class="overlay__nav">
+                <a href="index.html">ГЛАВНАЯ</a><br>
+                <a href="index2.html">КАТАЛОГ</a><br>
+                <a href="index3.html">О НАС</a><br>
+                <a href="index4.html">КОНТАКТЫ</a><br>
+                <a>ДОСТАВКА</a>
+            </nav>
+            <div class="header__icons">
+            <div class="logo"><img src="./assets/images/корзина.webp" class="logo__izbr"></div>
+            <div class="logo__like"><img src="./assets/images/избр.webp" class="logo__izbr"></div>
+        <div class="logo"><img src="./assets/images/профиль.webp" class="logo__izbr"></div>
+        </div>
+    </div>
+
+    </div></header>
 
 <div class="glav">
         <div class="glav__text">
@@ -31,15 +66,15 @@
             <h1 class="h1__2">Комфорт и стиль для кажого хвоста</h1>
         </div>
         <div class="glav__img">
-            <div class="glav__img__1"><img src="./assets/images/глав1.webp"></div>
-            <div class="glav__img__2"><img src="./assets/images/глав2.webp"></div>
-            <div class="glav__img__3"><img src="./assets/images/глав3.webp"></div>
+            <div class="glav__img__1"><img src="./assets/images/глав1.webp" class="glav__img__1__in"></div>
+            <div class="glav__img__2"><img src="./assets/images/глав2.webp" class="glav__img__2__in"></div>
+            <div class="glav__img__3"><img src="./assets/images/глав3.webp" class="glav__img__3__in"></div>
         </div>
     </div>
 
 
 <h>О НАС</h>
-<p class="glav__onas">Лапкин — создаем эргономичную мебель для домашних питомцев, 
+<p class="onas__text">Лапкин — создаем эргономичную мебель для домашних питомцев, 
     которая сочетает современный дизайн, качественные материалы и продуманный комфорт.</p>
 
 <div class="plusi">
@@ -71,7 +106,7 @@
 </div>
 </div>
 
-<h>О НАС</h>
+<h>ОТЗЫВЫ</h>
 
 <div class="otzivi">
     <div>
@@ -175,14 +210,19 @@
 <div class="product">
     <div class="product__like" id="likeButton"></div>
     
-        <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+        <div class="product__scroll" id="scroll">
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+        </div>
 
     <div class="product__info">
         <h2 class="product__title">Домик для кошки</h2>
         <h2 class="product__price">7 400 ₽</h2>
         <div class="product__button">
-             <button class="btn"><p>Подробнее   ></p></button>
-         <button class="btn"><p>В корзину</p></button>
+             <button class="btn"><p class="btn__p">Подробнее   ></p></button>
+         <button class="btn"><p class="btn__p">В корзину</p></button>
         </div>
     </div>
 </div>
@@ -192,14 +232,19 @@
 <div class="product">
     <div class="product__like" id="likeButton"></div>
     
-        <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+        <div class="product__scroll" id="scroll">
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+        </div>
 
     <div class="product__info">
         <h2 class="product__title">Домик для кошки</h2>
         <h2 class="product__price">7 400 ₽</h2>
         <div class="product__button">
-             <button class="btn"><p>Подробнее   ></p></button>
-         <button class="btn"><p>В корзину</p></button>
+             <button class="btn"><p class="btn__p">Подробнее   ></p></button>
+         <button class="btn"><p class="btn__p">В корзину</p></button>
         </div>
     </div>
 </div>
@@ -209,14 +254,19 @@
 <div class="product">
     <div class="product__like" id="likeButton"></div>
     
-        <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+        <div class="product__scroll" id="scroll">
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+            <div><img class="product__image" src="./assets/images/продукт.webp"></div>
+        </div>
 
     <div class="product__info">
         <h2 class="product__title">Домик для кошки</h2>
         <h2 class="product__price">7 400 ₽</h2>
         <div class="product__button">
-             <button class="btn"><p>Подробнее   ></p></button>
-         <button class="btn"><p>В корзину</p></button>
+             <button class="btn"><p class="btn__p">Подробнее   ></p></button>
+         <button class="btn"><p class="btn__p">В корзину</p></button>
         </div>
     </div>
 </div>
@@ -225,12 +275,12 @@
 
 <footer>
     <div class="footer__logo">
-            <div class="logo"><img src="./assets/images/лого2.webp"></div>
+            <div class="logo"><img src="./assets/images/лого2.webp" class="logotip"></div>
             <div class="footer__logo__icons">
-                <div><img src="./assets/images/тг.webp"></div>
-                <div><img src="./assets/images/фбук.webp"></div>
-                <div><img src="./assets/images/ватсап.webp"></div>
-                <div><img src="./assets/images/инста.webp"></div>
+                <div><img src="./assets/images/тг.webp" class="footer__logo__icons__in"></div>
+                <div><img src="./assets/images/фбук.webp" class="footer__logo__icons__in"></div>
+                <div><img src="./assets/images/ватсап.webp" class="footer__logo__icons__in"></div>
+                <div><img src="./assets/images/инста.webp" class="footer__logo__icons__in"></div>
             </div>
         </div>
 
@@ -252,5 +302,7 @@
         </div>
 </footer>
 
+<script src="./assets/js/scroll.js"></script>
+<script src="./assets/js/theme.js"></script>
 </body>
 </html>
